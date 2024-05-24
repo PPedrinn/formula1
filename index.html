@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-principal">
+        <header>
+            <div class="container">
+                <h1>Formula 1</h1>
+                <nav id="proximas-corridas">
+                    <ul>
+                        <li>
+                            <a href="#cards">Proximas corridas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="./img/mclaren.jpg" alt="McLaren de Lando Norris">
+                        <div class="carousel-caption">
+                            <h2>McLaren de Lando Norris</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./img/mercedes.jpg" alt="Mercedes de Hamilton">
+                        <div class="carousel-caption">
+                            <h2>Mercedes de Hamilton</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./img/redbull.jpg" alt="RB19 de Verstappen">
+                        <div class="carousel-caption">
+                            <h2>RB19 de Verstappen</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+        </div>
+        <section id="cards">
+            <div class="container">
+                <h2>Proxímas corridas</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Monaco
+                            </div>
+                            <img src="./img/monacogp.png" />
+                            <div class="card-body">
+                                <h4 class="card-title">Circuit de Monaco</h4>
+                                <p class="card-text">
+                                    Incrivelmente estreito e totalmente icônico. Nelson Piquet descreveu de forma memorável dirigir por Mônaco como “como andar de bicicleta pela sala de estar”… o que é justo. Apesar disso, é um desafio que quase todos os pilotos adoram, forçando-os a colocar as suas habilidades em risco e recompensando a precisão milimétrica. No entanto, ultrapassar em ruas estreitas é mais difícil, com o Grande Prémio de 2003 a testemunhar um total de zero ultrapassagens!
+                                </p>
+                                <a href="https://www.formula1.com/en/racing/2024/Monaco/Circuit.html" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card"><!--text-bg-dark-->
+                            <div class="card-header">
+                                Canadá  
+                            </div>
+                            <img src="./img/candagp.png" />
+                            <div class="card-body">
+                                <h4 class="card-title">Circuit Gilles-Villeneuve</h4>
+                                <p class="card-text">
+                                    O circuito rápido e de baixo downforce é um dos favoritos dos pilotos. A pista é bastante pára-arranca, com muitas chicanes de frenagem pesada e o famoso gancho para fazer as âncoras trabalharem duro. Fora das curvas, porém, a pista é rápida e fluida, enquanto a peça mais icônica do circuito surge logo no final da volta: o Muro dos Campeões, assim chamado após as excursões de Damon Hill, Jacques Villeneuve e Michael Schumacher durante o fim de semana do Grande Prêmio do Canadá de 1999.
+                                </p>
+                                <a href="https://www.formula1.com/en/racing/2024/Canada/Circuit.html" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Espanha
+                            </div>
+                            <img src="./img/spaingp.png" />
+                            <div class="card-body">
+                                <h4 class="card-title">Circuit de Barcelona-Catalunya</h4>
+                                <p class="card-text">
+                                    Os pilotos adoram o Circuito de Barcelona-Catalunha, o que é bom, já que tradicionalmente passam muito tempo percorrendo-o durante os testes de inverno. A pista é uma boa mistura de curvas de alta e baixa velocidade, com a desafiadora curva à direita da Curva 3 sendo uma ótima chance de avaliar o equilíbrio do carro que os designers de sua equipe lhe deram para lutar durante a temporada.
+                                </p>
+                                <a href="https://www.formula1.com/en/racing/2024/Spain/Circuit.html" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</html>

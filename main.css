@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272527;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #161516;
+    color: rgb(165, 47, 47);
+    margin-bottom: 36px;
+}
+
+header h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cards {
+    padding: 64px;
+}
+
+section {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    border-bottom: solid;
+    color: rgb(165, 47, 47);
+}
+
+@media screen and (max-width:767px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    header li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 49px;
+        text-decoration: underline;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #proximas-corridas {
+        display: none;
+    }
+
+    .carousel img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carousel h2 {
+        display: none;
+    }
+
+    .row {
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .row li {
+        margin-right: 0; 
+    }
+
+    .col-4 {
+        width: 90%;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 18px;
+    }
+
+    #cards li {
+        margin-bottom: 48px;
+    }
+
+    #cards h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #proximas-corridas {
+    display: none;
+    }
+
+    .carousel h2 {
+        display: none;
+    }
+
+    .col-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        padding: 8px;
+        margin-bottom: 58px;
+    } 
+
+    #titulo {
+        margin-left: 8px;
+    }
+
+    .col-4 {
+        display: block;
+        max-width: 90%;
+        flex: 1 1 calc(50% - 10px); 
+    }
+
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+}
+
